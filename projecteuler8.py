@@ -1,3 +1,6 @@
+# Find the thirteen adjacent digits in the 1000-digit number (in data/data8.txt)
+# that have the greatest product. What is the value of this product?
+
 from math import prod as product
 
 def maxThirteenProd(seq):
@@ -20,7 +23,7 @@ def getData(file_path):
 
 
 def main():
-	digits = getData("data/data.txt")
+	digits = getData("data/data8.txt")
 	digits = digits.replace("\n", "")
 
 	# split by 0

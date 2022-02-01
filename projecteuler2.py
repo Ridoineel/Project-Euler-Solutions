@@ -1,3 +1,5 @@
+# Sum of even fibonacci number do not exceeded four million
+
 def evenfib(limit_value: int):
     i, j = 1, 2
     

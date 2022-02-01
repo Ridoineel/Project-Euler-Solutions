@@ -1,3 +1,5 @@
+# What is the 10 001st prime number?
+
 def isPrime(n):
     for i in range(2, int(n**.5)+1):
         if not n % i:
