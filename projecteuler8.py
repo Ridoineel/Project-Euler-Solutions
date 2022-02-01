@@ -1,5 +1,4 @@
-import math
-from utils.functions import getData
+from math import prod as product
 
 def maxThirteenProd(seq):
 	MAX = 0
@@ -7,7 +6,7 @@ def maxThirteenProd(seq):
 	for i in range(len(seq) - 12):
 		sub_seq = seq[i:i + 13]
 
-		prod = math.prod(sub_seq)
+		prod = product(sub_seq)
 
 		if prod > MAX:
 			MAX = prod
