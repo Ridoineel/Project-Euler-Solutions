@@ -6,7 +6,7 @@ from math import factorial
 def nbPath(n):
 	""" Search number of paths from (0, 0) to (n-1, n-1).
 		With combinatorics, the methematical expression is:
-		(2n!)/(n!*n!)
+		(2n!)/(n!*n!): 		O(n)
 	"""
 
 	A = factorial(2*n)
@@ -15,7 +15,8 @@ def nbPath(n):
 	return A/B
 
 def main():
-	nb = nbPath(20)
+	n = 20
+	nb = nbPath(n)
 
 	print(nb)
 

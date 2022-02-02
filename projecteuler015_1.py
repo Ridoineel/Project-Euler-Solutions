@@ -1,15 +1,18 @@
 # How many such routes are there through a 20×20 grid?
 # from 0, 0 to 19, 19:
 #
-# CHECK projecteuler015_2.py, OVER THERE I USE MATHEMATICAL FORMULA
-# 
+# CHECK projecteuler015_2.py, OVER THERE I USE MATHEMATICAL FORMULA    !!!!!!!!!!!!!!
+# projecteuler015_2.py is O(n) but he is more limited by n than this   !!!!!!!!!!!!!!
+
+# import sys
+# sys.setrecursionlimit(10**6)
 
 n = 20
 nb_paths = [[0] * (n + 1) for i in range(n + 1)]
 
 def nbPath(x=0, y=0, size=n + 1):
 	""" Search number of paths from (x, y) to (n-1, n-1),
-		using memoization
+		using memoization: 		O(n^2)
 	"""
 
 	global nb_paths
