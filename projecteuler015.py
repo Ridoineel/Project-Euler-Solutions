@@ -5,13 +5,17 @@ n = 20
 nb_paths = [[0] * (n + 1) for i in range(n + 1)]
 
 def nbPath(x=0, y=0, size=n + 1):
+	""" Search number of paths from (x, y) to (n-1, n-1),
+		using memoization
+	"""
+
 	global nb_paths
 
 	# x or y overflow
 	if x >= size  or y >= size:
 		return 0
 
-	# nb path on (x, y) is already save
+	# nb path from (x, y) is already save
 	if nb_paths[x][y]: 
 		return nb_paths[x][y]
 
