@@ -1,4 +1,4 @@
-# Find the maximum total from top to bottom of the triangle in data/data18.txt
+# Find the maximum total from top to bottom of the triangle in data/data018_1.txt
 # 
 # Method: use memoization and add to (i, j) max of here lower neightbors
 # Without memoization is very slow
@@ -24,7 +24,7 @@ def totalFromTop(T: [int], i=0, j=0):
 	return sum_from_ij[i, j]
 
 def main():
-	data = getData("data/data18.txt")
+	data = getData("data/data018_1.txt")
 	data = [[int(i) for i in line.split()] for line in data.split("\n")]
 
 	print(totalFromTop(data))
